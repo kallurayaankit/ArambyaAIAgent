@@ -4,6 +4,8 @@ Public demo: https://arambya-ai-agent.glossychar1.chatgpt.site
 
 Repository: https://github.com/kallurayaankit/ArambyaAIAgent
 
+[Public verification and screenshots](docs/PUBLIC-VERIFICATION.md) · [Sample exported itinerary](docs/sample-itinerary.md)
+
 The hosted version runs the same live public-data tools on a server and streams activity to the browser. It is not LLM-powered: the public demo uses the explicit rule-based fallback. Public results may be cached for up to five minutes with original retrieval timestamps preserved. See `hosted/` for the deployed Sites/Vinext source and the limitations below.
 
 A local discovery and day-planning prototype, outside QA. It executes real public-data tools, streams their activity to a browser, then creates a provisional walking itinerary with sources and downloadable Markdown/JSON.
