@@ -4,7 +4,7 @@ LIVE public retrieval — may be partial
 
 Date: 2026-10-24 (Australia/Melbourne)
 Planner: Rule-based fallback (no LLM)
-Generated: 2026-10-24T11:59:43.721Z
+Generated: 2026-10-24T12:11:44.637Z
 Budget: AUD 80; activity allowance: 50; remaining: 30
 
 ## Weather
@@ -58,19 +58,19 @@ Checked 8 featured listings. Date ranges match, but daily sessions need confirma
 Costs are rough planning allowances, not verified prices. Walking times use straight-line distance × 1.35 plus a 10-minute buffer, not a routing service. Confirm access, prices and holiday hours before leaving.
 
 ## Tool activity
-- 2026-10-24T11:59:21.622Z geocoding / running: Calling public data tool…
-- 2026-10-24T11:59:23.076Z geocoding / success: Response received.
-- 2026-10-24T11:59:23.076Z places / running: Calling public data tool…
-- 2026-10-24T11:59:23.076Z places / running: Requesting places + opening_hours from overpass.kumi.systems
-- 2026-10-24T11:59:23.076Z weather / running: Calling public data tool…
-- 2026-10-24T11:59:23.076Z events / running: Calling public data tool…
-- 2026-10-24T11:59:23.970Z weather / success: Response received.
-- 2026-10-24T11:59:26.136Z events / success: Response received.
-- 2026-10-24T11:59:33.077Z places / running: Requesting places + opening_hours from overpass.private.coffee
-- 2026-10-24T11:59:43.077Z places / running: Overpass unavailable. Reading City of Melbourne live landmark records; hours are not included in this dataset.
-- 2026-10-24T11:59:43.350Z places / running: Checking published State Library Victoria hours on the official city listing.
-- 2026-10-24T11:59:43.721Z places / success: Response received.
-- 2026-10-24T11:59:43.721Z planner / running: Ranking interest matches, checking hours, walking distance and estimated budget.
-- 2026-10-24T11:59:43.721Z planner / success: Built 4 provisional stops from 47 candidates; 18 skipped.
+- 2026-10-24T12:11:22.589Z geocoding / running: Calling public data tool…
+- 2026-10-24T12:11:24.054Z geocoding / success: Response received.
+- 2026-10-24T12:11:24.054Z places / running: Calling public data tool…
+- 2026-10-24T12:11:24.054Z places / running: Requesting places + opening_hours from overpass.kumi.systems
+- 2026-10-24T12:11:24.054Z weather / running: Calling public data tool…
+- 2026-10-24T12:11:24.054Z events / running: Calling public data tool…
+- 2026-10-24T12:11:24.949Z weather / success: Response received.
+- 2026-10-24T12:11:27.419Z events / success: Response received.
+- 2026-10-24T12:11:34.054Z places / running: Requesting places + opening_hours from overpass.private.coffee
+- 2026-10-24T12:11:44.054Z places / running: Overpass unavailable. Reading City of Melbourne live landmark records; hours are not included in this dataset.
+- 2026-10-24T12:11:44.365Z places / running: Checking published State Library Victoria hours on the official city listing.
+- 2026-10-24T12:11:44.637Z places / success: Response received.
+- 2026-10-24T12:11:44.637Z planner / running: Ranking interest matches, checking hours, walking distance and estimated budget.
+- 2026-10-24T12:11:44.637Z planner / success: Built 4 provisional stops from 47 candidates; 18 skipped.
 
 Data attribution: © OpenStreetMap contributors (ODbL); Open-Meteo (CC BY 4.0); GeoNames; What's On Melbourne.

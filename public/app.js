@@ -6,7 +6,7 @@ let controller=null,runId=0,lastResult=null;
 $('date').value=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Melbourne',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date());
 fetch('/api/config').then(r=>r.json()).then(c=>$('provider').textContent=c.provider+'. No cloud model calls.').catch(()=>{});
 function busy(value){$('plan-button').disabled=value;$('cancel').hidden=!value;$('trip-form').setAttribute('aria-busy',String(value));}
-function activity(event){const list=$('activity-log');if(!list.dataset.started){list.textContent='';list.dataset.started='1';}const li=document.createElement('li');li.className=event.status;li.textContent=`${event.tool} · ${event.status}: ${event.message}`;list.append(li);$('activity-count').textContent=list.children.length;li.scrollIntoView({block:'nearest'});}
+function activity(event){const list=$('activity-log');if(!list.dataset.started){list.textContent='';list.dataset.started='1';}const li=document.createElement('li');li.className=event.status;li.textContent=`${event.tool} · ${event.status}: ${event.message}`;list.append(li);$('activity-count').textContent=list.children.length;list.scrollTop=list.scrollHeight;}
 $('cancel').addEventListener('click',()=>{runId++;controller?.abort();controller=null;busy(false);$('status').textContent='Cancelled. You can change the details and try again.';activity({tool:'request',status:'cancelled',message:'Cancelled by you. No partial plan saved.'});});
 $('trip-form').addEventListener('submit',async event=>{
   event.preventDefault();controller?.abort();controller=new AbortController();const active=controller,id=++runId;

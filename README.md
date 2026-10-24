@@ -110,3 +110,6 @@ If live sources are blocked by your network, use the explicit offline demo; do n
 
 The test suite currently contains 18 passing tests. The hosted adapter adds streaming, origin/body checks and transparent five-minute caching. Hosted deployment source is in `hosted/`; public hosting disables local-model access.
 
+
+## Visual design
+The editorial redesign takes inspiration from the composition, oversized serif typography, generous spacing and restrained navigation of the Tengile MalaMala Collection reference. All copy and the inline landscape SVG are original; no reference-site images, branding, fonts or code were copied. The illustration is an imagined city, not a photograph of a destination. The UI includes keyboard focus, a skip link, responsive controls and a reduced-motion CSS override. Live tool activity scrolls inside its log without pulling the page away from your controls.
