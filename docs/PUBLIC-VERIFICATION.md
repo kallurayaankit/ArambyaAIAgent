@@ -41,3 +41,15 @@ The staged source was reviewed and scanned before upload. No credential-like val
 ![Public desktop result](public-desktop.jpg)
 
 ![Public mobile result](public-mobile.jpg)
+
+## Redesigned public verification (24 October 2026)
+- Public Sites version 3 deployed successfully from source commit `2e50b4a526b95d70859d76e8649f7b9ac02aa5e4`.
+- Original illustrated editorial hero, cream/olive palette, serif headings and spacious planner; reference inspected visually. No third-party design assets copied.
+- Actual public Melbourne live run: 4 stops, live weather, State Library regular hours and 7 event listings. Overpass unavailable; live City of Melbourne fallback clearly disclosed.
+- JSON and Markdown downloads read back successfully. Fresh sample export included.
+- Final mobile browser at 390px override: 375px usable document width, 375px scroll width, one 330px content column; no horizontal overflow. Mobile live run completed.
+- Invalid Sydney offline-demo request shows an error. Cancellation and repeat requests checked again after redesign. Reduced-motion override reviewed in CSS; OS preference emulation unavailable in this browser tool.
+- All 18 tests, local build, hosted build and GitHub Node 22/24 CI passed for `1009c76c15f28d7a65dc1015846ebdc907899558`.
+- Optional local model adapter remains untested against a real LLM; public app uses deterministic rules. Print-to-PDF save not verified.
+
+The final demo video is `ArambyaAIAgent-demo.webm`: 3,707,383 bytes, VP9/WebM, 1264 x 800, 74.89 seconds. Browser playback and captions checked. Actual public browser captures only; pauses condensed, no audio. Recorded live request used AUD 82. Downloaded Markdown export verified on disk. No private tabs or desktop notifications captured.

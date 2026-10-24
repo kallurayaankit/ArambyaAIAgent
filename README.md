@@ -113,3 +113,8 @@ The test suite currently contains 18 passing tests. The hosted adapter adds stre
 
 ## Visual design
 The editorial redesign takes inspiration from the composition, oversized serif typography, generous spacing and restrained navigation of the Tengile MalaMala Collection reference. All copy and the inline landscape SVG are original; no reference-site images, branding, fonts or code were copied. The illustration is an imagined city, not a photograph of a destination. The UI includes keyboard focus, a skip link, responsive controls and a reduced-motion CSS override. Live tool activity scrolls inside its log without pulling the page away from your controls.
+
+## Demo video
+[Download the 75-second public workflow demo (WebM, 3.7 MB)](docs/ArambyaAIAgent-demo.webm?raw=1)
+
+The captioned video uses actual captures of the public app: inputs, live tools, provisional sourced itinerary and Markdown export. It has no audio. Pauses are condensed, and the screen capture has a low frame rate; results are not fabricated. The public planner is rule-based, not LLM-powered. Playback was verified at 1264 x 800, duration 74.89 seconds.
