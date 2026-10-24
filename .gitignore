@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+*.log
+test-results/
+VERIFICATION.md
+hosted/.git/
+hosted/.sites-runtime/
+hosted/.wrangler/
+hosted/.openai/runtime/

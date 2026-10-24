@@ -33,7 +33,7 @@ No `npm install` is required. Do not run source and built servers on the same po
 
 ## Try it
 
-Keep Melbourne, today's date, AUD 80, and art/history/nature. Choose **Live public tools** and build the day. Watch each retrieval appear in Tool activity. Cancel is available while working, and a new run replaces the previous result. Choose **Offline demo � Melbourne sample data** to explore without networking. Demo supports Melbourne only and labels every result as illustrative.
+Keep Melbourne, today's date, AUD 80, and art/history/nature. Choose **Live public tools** and build the day. Watch each retrieval appear in Tool activity. Cancel is available while working, and a new run replaces the previous result. Choose **Offline demo · Melbourne sample data** to explore without networking. Demo supports Melbourne only and labels every result as illustrative.
 
 Results show the resolved city/country/timezone, provisional stop times, walking estimates, regular-hours status, cost allowances, source links, weather, and matching event date ranges. Events stay in a separate shortlist because a date range does not establish a bookable session. Use **Export itinerary .md**, **Export data .json**, or **Print / PDF**. Exports include provenance, warnings and the activity log. Downloads are user initiated; no plan history is stored by the server.
 
@@ -48,7 +48,7 @@ Results show the resolved city/country/timezone, provisional stop times, walking
 | Official hours enrichment | What's On Melbourne, State Library Victoria | When this named landmark is discovered in the fallback, retrieves its published weekly hours. Fails closed to **unknown** if markup is incomplete/changed. This enrichment covers one verified venue in v0.1. |
 | Events | What's On Melbourne | Reads up to eight featured listing pages and parses schema.org Event metadata. Filters date ranges and cancelled listings. Limited sample, not exhaustive search. Melbourne only. |
 
-Open-Meteo's free endpoint is for noncommercial prototyping, subject to its usage terms. OSM: c OpenStreetMap contributors, ODbL. Open-Meteo and GeoNames: CC BY attribution. City of Melbourne landmark data: CC BY (see source metadata). Event content belongs to its publishers; only short metadata and source links are displayed.
+Open-Meteo's free endpoint is for noncommercial prototyping, subject to its usage terms. OSM: © OpenStreetMap contributors, ODbL. Open-Meteo and GeoNames: CC BY attribution. City of Melbourne landmark data: CC BY (see source metadata). Event content belongs to its publishers; only short metadata and source links are displayed.
 
 Sources and implementation references:
 
@@ -66,11 +66,11 @@ Sources and implementation references:
 
 The orchestrator validates the request, geocodes the city, runs place/weather/event tools, optionally ranks candidate IDs with a local model, and schedules up to four stops. Interest matches, category variety, proximity, available hours and indoor options during rain influence the score. It avoids listed closed hours, walks over 3.5 estimated km per leg, activities above the allowance, and finishes after 17:00. It starts from the city centre at 10:00 and leaves 15-minute breaks between stops.
 
-- Walking time is straight-line distance x 1.35 at 4.5 km/h, plus a 10-minute buffer. No real routing, transit, accessibility, elevation, or road-crossing checks.
-- Budget is always **AUD**, even outside Australia. Generic allowances (AUD 20 caf� / AUD 25 indoor attraction; assumed free park or OSM `fee=no`) are **not live prices**. 25% of the budget is reserved. Food/transport/ticketed exhibitions may cost extra. There is no guarantee actual spending fits the estimate.
+- Walking time is straight-line distance × 1.35 at 4.5 km/h, plus a 10-minute buffer. No real routing, transit, accessibility, elevation, or road-crossing checks.
+- Budget is always **AUD**, even outside Australia. Generic allowances (AUD 20 café / AUD 25 indoor attraction; assumed free park or OSM `fee=no`) are **not live prices**. 25% of the budget is reserved. Food/transport/ticketed exhibitions may cost extra. There is no guarantee actual spending fits the estimate.
 - Hours support `24/7`, simple daily time windows, day/day-range windows and `off`/`closed`. Complex expressions, holidays, overnight spans and missing data are unknown. Unknown-hour visits remain visibly provisional. Known hours are not a guarantee the venue is open.
 - The geocoder chooses one result; ambiguous cities require checking the displayed country. City centre is approximate. Melbourne is the best-supported destination; non-Melbourne places rely on Overpass and have no event adapter.
-- Open data can be stale. The Melbourne fallback is a landmark directory, not a real-time business directory. It contains no caf�s, and its combined gallery/museum classification is approximate.
+- Open data can be stale. The Melbourne fallback is a landmark directory, not a real-time business directory. It contains no cafés, and its combined gallery/museum classification is approximate.
 - Events are featured-page samples; date-range matches may not run every day. No event is automatically booked or inserted into the timed plan.
 - Public endpoints may rate-limit, time out, change HTML, or deny access. Individual failures yield a partial result. Geocoding failure stops the request. Each run has a 90-second bound and client cancellation propagates to fetches.
 - No LLM is required or implied. Demo data is synthetic/illustrative. No cloud credentials are read or used.
@@ -107,5 +107,4 @@ The app uses no personal documents, cookies, account data, or stored credentials
 If live sources are blocked by your network, use the explicit offline demo; do not disable TLS or system security. Overpass can be slow: Melbourne will attempt the official directory fallback. Other cities may return no stops. Forecasts normally cover roughly the coming two weeks; a distant date can still produce places with a weather warning. If a port is busy, stop the earlier instance or select another port. No broad process termination is needed.
 
 The test suite currently contains 18 passing tests. The hosted adapter adds streaming, origin/body checks and transparent five-minute caching. Hosted deployment source is in `hosted/`; public hosting disables local-model access.
-
 
